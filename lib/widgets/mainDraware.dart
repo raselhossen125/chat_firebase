@@ -1,7 +1,7 @@
 // ignore_for_file: use_build_context_synchronously, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import '../auth/suthService.dart';
+import '../auth/authService.dart';
 import '../pages/char_room_page.dart';
 import '../pages/launcher_page.dart';
 import '../pages/profile_page.dart';

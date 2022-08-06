@@ -1,6 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, non_constant_identifier_names, unused_local_variable, use_build_context_synchronously
 
-import 'package:chat_firebase/auth/suthService.dart';
+import 'package:chat_firebase/auth/authService.dart';
 import 'package:chat_firebase/provider/user_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../auth/suthService.dart';
+import '../auth/authService.dart';
 import 'logIn_page.dart';
 import 'user_list_page.dart';
 

@@ -19,4 +19,22 @@ class AuthService {
   }
 
   static Future<void> logOut() => _auth.signOut();
+
+  static Future<void> updateDisplayNamer(String name) =>
+      _auth.currentUser!.updateDisplayName(name);
+
+  static Future<void> updateDisplayImage(String image) =>
+      _auth.currentUser!.updatePhotoURL(image);
+
+  static Future<void> updateDisplayEmail(String email) =>
+      _auth.currentUser!.updatePhotoURL(email);
+
+  static Future<void> updatePhoneNumber(String phone) async {
+    await FirebaseAuth.instance.verifyPhoneNumber(
+      verificationCompleted: (PhoneAuthCredential credential) {},
+      verificationFailed: (FirebaseAuthException e) {},
+      codeSent: (String verificationid, int? resendToken) {},
+      codeAutoRetrievalTimeout: (String verificationid) {},
+    );
+  }
 }
