@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, avoid_print
 
 import 'package:flutter/material.dart';
-
 import '../widgets/mainDraware.dart';
 
 class ChatRoomPage extends StatelessWidget {
