@@ -24,7 +24,7 @@ class UserProvider extends ChangeNotifier {
       DBHelper.getUserByUid(uid);
 
   Future<void> updateProfile(String uid, Map<String, dynamic> map) =>
-      DBHelper.updaProfile(uid, map);
+      DBHelper.updateProfile(uid, map);
 
   Future<String> updateImage(XFile xFile) async {
     final imagename = DateTime.now().millisecondsSinceEpoch.toString();
